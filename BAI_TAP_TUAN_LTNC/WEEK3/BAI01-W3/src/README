@@ -1,0 +1,2 @@
+khi thay constructor mặc định bằng constructor có tham số thì lớp Employee sẽ bị lỗi do constructor Employee() sẽ tự động gọi super(),
+nhưng Person không có constructor rỗng nên máy sẽ không biết phải chạy constructor nào -> lỗi

@@ -1,0 +1,3 @@
+username=admin
+timeout=30
+maxConnections=10

@@ -1,0 +1,2 @@
+khi bor comment thì dòng B có lỗi, vì biến m có kiểu MathUtils, trong MathUtils không có method sum(double a, double b) nên bị lỗi
+cách sửa: sửa MathUtils m = new AdvancedMath() thành AdvancedMath m = new AdvancedMath()
