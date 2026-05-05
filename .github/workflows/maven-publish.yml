@@ -21,11 +21,10 @@ jobs:
         cache: maven
 
     - name: Build with Maven
-      # Đây là dòng quan trọng nhất: Phải khớp 100% với tên thư mục trên GitHub của bạn
-      run: mvn -B package --file BAI03-W9/pom.xml
+      run: mvn -B package --file BAI_TAP_TUAN_LTNC/WEEK9/BAI03-W9/pom.xml
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
         name: BankSystem-Jar
-        path: BAI03-W9/target/*.jar
+        path: BAI_TAP_TUAN_LTNC/WEEK9/BAI03-W9/target/*.jar
