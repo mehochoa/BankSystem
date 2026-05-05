@@ -21,11 +21,11 @@ jobs:
         cache: maven
 
     - name: Build with Maven
-      # Chú ý: Trỏ đúng vào file pom.xml trong thư mục của bạn
+      # Chú ý: Trỏ đúng vào thư mục BAI_TAP_TUAN_LTNC/BAI03-W9/ nơi có file pom.xml
       run: mvn -B package --file BAI_TAP_TUAN_LTNC/BAI03-W9/pom.xml
 
-    - name: Upload Build Artifact
+    - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: BankSystem-Jar-Package
+        name: BankSystem-Jar
         path: BAI_TAP_TUAN_LTNC/BAI03-W9/target/*.jar
